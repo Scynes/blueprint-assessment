@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-.slant-section {
-    clip-path: polygon(0 0, 60% 0, 100% 100%, 0 100%);
-    -webkit-clip-path: polygon(0 0, 60% 0, 100% 100%, 0 100%);
+@layer utilities {
+    .slant-section {
+        clip-path: polygon(0 0, 60% 0, 100% 100%, 0 100%);
+        -webkit-clip-path: polygon(0 0, 60% 0, 100% 100%, 0 100%);
+    }
 }
