@@ -8,7 +8,7 @@ export const NavigationBarCTAGroup = () => {
                 <span>VOLUNTEER</span>
             </Button>
             <Button className={ 'bg-red-600 text-white rounded-full hover:bg-red-500 active:scale-90 font-bold text-sm' }>
-                <span>DONATE</span>
+                <a href='#donate'>DONATE</a>
             </Button>
             <div className={ 'flex gap-2' }>
                 <IconButton iconPath={ '/icons/facebook.svg' } className={ 'size-8' } />
