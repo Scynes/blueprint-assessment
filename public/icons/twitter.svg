@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="68px" height="68px" viewBox="0 0 68 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon/Twitter</title>
+    <defs>
+        <filter x="-1.2%" y="-15.4%" width="102.4%" height="130.8%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Top-Bar" transform="translate(-1496.000000, -30.000000)" filter="url(#filter-1)">
+            <g id="Nav" transform="translate(1127.000000, 46.000000)">
+                <g id="Icon/Twitter" transform="translate(385.000000, 0.000000)">
+                    <circle id="Oval" stroke="#FFFFFF" stroke-width="1.14999998" cx="17.8249996" cy="17.8249996" r="17.8249996"></circle>
+                    <path d="M24.3312901,12.7827203 C25.1395811,12.2961762 25.7169319,11.56636 25.9478721,10.5932718 C25.2550513,11.0798159 24.4467603,11.323088 23.5229991,11.56636 C22.8301783,10.8365439 21.790947,10.3499998 20.7517157,10.3499998 C18.7887232,10.3499998 17.0566711,12.1745402 17.0566711,14.3639886 C17.0566711,14.7288967 17.0566711,14.9721688 17.1721412,15.2154408 C14.0544473,15.0938048 11.1676937,13.5125364 9.32017142,11.0798159 C8.97376098,11.6879961 8.85829084,12.2961762 8.85829084,13.1476284 C8.85829084,14.4856247 9.5511117,15.7019849 10.590343,16.4318011 C10.0129923,16.4318011 9.43564156,16.188529 8.85829084,15.945257 C8.85829084,17.8914334 10.1284624,19.4727017 11.8605146,19.8376098 C11.5141042,19.9592458 11.1676937,19.9592458 10.8212833,19.9592458 C10.590343,19.9592458 10.3594027,19.9592458 10.1284624,19.8376098 C10.590343,21.4188781 11.9759847,22.6352384 13.7080369,22.6352384 C12.4378653,23.7299626 10.8212833,24.3381427 8.97376098,24.3381427 L8.04999983,24.3381427 C9.78205199,25.4328669 11.7450444,26.1626831 13.823507,26.1626831 C20.7517157,26.1626831 24.5622304,20.0808818 24.5622304,14.8505327 L24.5622304,14.3639886 C25.3705214,13.7558085 26.0633423,13.0259923 26.5252229,12.1745402 C25.832402,12.5394482 25.1395811,12.6610843 24.3312901,12.7827203 Z" id="Shape" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

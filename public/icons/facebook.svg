@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="68px" height="68px" viewBox="0 0 68 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon/Facebook</title>
+    <defs>
+        <filter x="-1.2%" y="-15.4%" width="102.4%" height="130.8%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Top-Bar" transform="translate(-1445.000000, -30.000000)" filter="url(#filter-1)">
+            <g id="Nav" transform="translate(1127.000000, 46.000000)">
+                <g id="Icon/Facebook" transform="translate(334.000000, 0.000000)">
+                    <circle id="Oval" stroke="#FFFFFF" stroke-width="1.14999998" cx="17.8249996" cy="17.8249996" r="17.8249996"></circle>
+                    <path d="M15.3582207,19.0927272 L11.4999998,19.0927272 L11.4999998,15.0284848 L15.3582207,15.0284848 L15.3582207,12.3189898 C15.3582207,8.66225539 17.5079057,6.89999986 20.6046038,6.89999986 C22.0879483,6.89999986 23.3628203,7.01633202 23.7343412,7.06832723 L23.7343412,10.889826 L21.586624,10.8908556 C19.9024719,10.8908556 19.5763751,11.7338744 19.5763751,12.9709485 L19.5763751,15.0284848 L24.3607363,15.0284848 L23.0746626,19.0927272 L19.5763622,19.0927272 L19.5763622,28.5759596 L15.3877104,28.5759596 L15.3582207,19.0927272 Z" id="Shape" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
