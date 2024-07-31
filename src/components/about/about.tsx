@@ -2,8 +2,8 @@ import Image from 'next/image';
 
 export const About = () => {
     return (
-        <section className={ 'transition-all px-8 sm:px-12' }>
-            <div className={ 'grid grid-rows-4 lg:gap-10 lg:grid-cols-2 lg:grid-rows-2 transition-all md:px-24' }>
+        <section className={ 'transition-all px-8 pb-16 sm:px-12' }>
+            <div className={ 'grid grid-rows-3 lg:gap-10 lg:grid-cols-2 lg:grid-rows-2 transition-all md:px-24' }>
                 <div className={ 'relative w-full min-h-96' }>
                     <h1 className={ 'text-2xl font-extrabold mb-3' }>MEET SAMANTHA</h1>
                     <Image src={'/images/meet-photo.png'} alt={'about image'} className={ 'object-cover' } fill />

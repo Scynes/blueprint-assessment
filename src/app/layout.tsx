@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { NavigationBar } from '@/components/navigation/navigation-bar';
 
 import "@/globals.css";
-import { NavigationBar } from '@/components/navigation/navigation-bar';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,12 +11,13 @@ export const metadata: Metadata = {
   description: "Democrat for Senate.",
 };
 
+// Currently experiencing a bug with the Footer component so I can't place it in the RootLayout component.
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
     return (
         <html lang="en">
             <body className={inter.className}>
                 <div className={ 'grid grid-rows-[auto_1fr] h-dvh' }>
-                    <header id={ 'content-header' }>
+                    <header>
                         <NavigationBar />
                     </header>
                     <div id={ 'primary-content' } className={ 'overflow-y-scroll overflow-x-clip' }>

@@ -1,5 +1,6 @@
 import { About } from '@/components/about/about';
 import { DonateContainer } from '@/components/donate/donate-container';
+import { Footer } from '@/components/footer/footer';
 import { Hero } from '@/components/hero/hero'
 
 export default () => {
@@ -8,6 +9,7 @@ export default () => {
             <Hero />
             <DonateContainer />
             <About />
+            <Footer />
         </div>
     );
 }
