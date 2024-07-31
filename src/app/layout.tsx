@@ -14,7 +14,14 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     return (
         <html lang="en">
             <body className={inter.className}>
-                {children}
+                <div className={ 'grid grid-rows-[auto_1fr] h-dvh' }>
+                    <header id={ 'content-header' }>
+
+                    </header>
+                    <div id={ 'primary-content' }>
+                        { children }
+                    </div>
+                </div>
             </body>
         </html>
     );
