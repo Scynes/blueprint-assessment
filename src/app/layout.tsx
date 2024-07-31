@@ -19,7 +19,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                     <header id={ 'content-header' }>
                         <NavigationBar />
                     </header>
-                    <div id={ 'primary-content' } className={ 'overflow-scroll' }>
+                    <div id={ 'primary-content' } className={ 'overflow-y-scroll overflow-x-clip' }>
                         { children }
                     </div>
                 </div>
