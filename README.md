@@ -39,8 +39,8 @@ Make sure you have the following installed:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/samantha-hall-campaign.git
-   cd samantha-hall-campaign
+   git clone https://github.com/Scynes/blueprint-assessment.git
+   cd blueprint-assessment
    ```
 
 2. Install dependencies:
