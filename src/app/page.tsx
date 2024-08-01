@@ -4,7 +4,7 @@ import { Footer } from '@/components/footer/footer';
 import { Hero } from '@/components/hero/hero'
 import { Tweets } from '@/components/tweet/tweets';
 
-export default () => {
+export default function Home () {
     return (
         <div className={ 'h-full bg-red-200' }>
             <Hero />

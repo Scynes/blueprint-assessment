@@ -14,7 +14,7 @@ export const Hero = () => {
         <section className={ 'relative h-full bg-blue-400' }>
             <div className={ `flex flex-col justify-center transition-all sm:slant-section clip absolute sm:px-12 sm:py-24 h-full max-w-[38rem] w-full z-10 text-white bg-gradient-to-tr from-sky-900 via-sky-700 to-yellow-300` }>
                 <div className={ 'relative flex-1 sm:hidden' }>
-                    <Image src="/images/hero.png" alt="Hero" fill className='object-cover' />
+                    <Image src="/images/hero.png" alt="Hero" fill sizes={ '100%' } className='object-cover' />
                 </div>
                 <motion.div variants={ HERO_ANIMATION_CONTAINER } initial={ 'hidden' } animate={ 'show' } className={ 'p-12 sm:p-0' }>
                     <Image src="/images/logo.png" alt="Logo" width={ 225 } height={ 225 } className={ 'mb-7' }/>
@@ -25,7 +25,7 @@ export const Hero = () => {
                     <HeroForm />
                 </motion.div>
             </div>
-            <Image src="/images/hero.png" alt="Hero" fill className='object-cover' />
+            <Image src="/images/hero.png" alt="Hero" fill sizes={ '100%' } className='object-cover' />
         </section>
     );
 }

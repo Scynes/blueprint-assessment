@@ -17,7 +17,7 @@ export const About = () => {
                     <p className={ 'mt-6' }>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente dolores atque saepe aspernatur modi. Qui perferendis repellat iure hic delectus non nemo.</p>
                 </div>
                 <div className={ 'relative' }>
-                    <Image src={'/images/about-photo.jpg'} alt={'about image'} fill className={ 'object-cover' }/>
+                    <Image src={'/images/about-photo.jpg'} alt={'about image'} fill sizes={ '100%' } className={ 'object-cover' }/>
                 </div>
             </div>
         </section>

@@ -1,6 +1,6 @@
 import { getContacts } from '@/actions/get-contacts';
 
-export default async () => {
+export default async function Contacts () {
 
     const { data, error } = await getContacts();
 

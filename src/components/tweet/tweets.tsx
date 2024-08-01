@@ -21,7 +21,7 @@ export const Tweets = () => {
     return (
         <div className={ 'p-4 sm:p-12 text-2xl sm:text-3xl font-extrabold text-white' }>
             <div className={ 'p-4 bg-sky-800' }>
-                <h1>WHAT'S BEING SAID?</h1>
+                <h1>{ `WHAT'S BEING SAID?` }</h1>
             </div>
             <div className={ 'flex gap-6 overflow-x-scroll' }>
                 { TWEET_IDS.map((id: string) => (
