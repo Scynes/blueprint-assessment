@@ -2,6 +2,8 @@
 
 import { useFormStatus } from 'react-dom';
 import { Spinner } from '@/components/spinner';
+import { motion } from 'framer-motion';
+import { INPUT_TRANSITION } from '@/animations/form-animations';
 
 /**
  * HeroFormSubmitButton is a button component that is used to submit the HeroForm. I created
@@ -16,8 +18,8 @@ export const HeroFormSubmitButton = () => {
     const { pending } = useFormStatus();
 
     return (
-        <button type={ 'submit' } className={ `transition-all flex justify-center text-black items-center bg-blue-400 ${ !pending && 'hover:bg-blue-300' } p-2 h-10 rounded-full` } disabled={ pending }>
+        <motion.button variants={ INPUT_TRANSITION } type={ 'submit' } className={ `transition-all flex justify-center text-black items-center bg-blue-400 ${ !pending && 'hover:bg-blue-300' } p-2 h-10 rounded-full` } disabled={ pending }>
             { pending ? <Spinner /> : <span className={ 'font-medium' }>SIGN UP</span> }
-        </button>
+        </motion.button>
     );
 }

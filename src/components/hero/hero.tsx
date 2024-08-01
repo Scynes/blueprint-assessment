@@ -1,4 +1,8 @@
+'use client';
+
+import { HERO_ANIMATION_CONTAINER, HERO_TEXT_ANIMATION } from '@/animations/hero-animations';
 import { HeroForm } from '@/components/hero/hero-form';
+import { motion } from 'framer-motion';
 
 import Image from 'next/image';
 
@@ -12,14 +16,14 @@ export const Hero = () => {
                 <div className={ 'relative flex-1 sm:hidden' }>
                     <Image src="/images/hero.png" alt="Hero" fill className='object-cover' />
                 </div>
-                <div className={ 'p-12 sm:p-0' }>
+                <motion.div variants={ HERO_ANIMATION_CONTAINER } initial={ 'hidden' } animate={ 'show' } className={ 'p-12 sm:p-0' }>
                     <Image src="/images/logo.png" alt="Logo" width={ 225 } height={ 225 } className={ 'mb-7' }/>
                     <div className={ 'mb-4' }>
-                        <p className={ 'text-4xl font-extrabold' }>STAY IN TOUCH</p>
-                        <p className={ 'text-4xl font-extrabold' }>WITH SAMANTHA</p>
+                        <motion.p variants={ HERO_TEXT_ANIMATION } className={ 'text-4xl font-extrabold' }>STAY IN TOUCH</motion.p>
+                        <motion.p variants={ HERO_TEXT_ANIMATION } className={ 'text-4xl font-extrabold' }>WITH SAMANTHA</motion.p>
                     </div>
                     <HeroForm />
-                </div>
+                </motion.div>
             </div>
             <Image src="/images/hero.png" alt="Hero" fill className='object-cover' />
         </section>

@@ -29,7 +29,7 @@ export const NavigationSideBar = () => {
                     </Button>
                     <Link href={'#donate'} className={ 'w-full' }>
                         <Button className={ 'bg-red-600 w-full h-10 text-white rounded-full hover:bg-red-500 active:scale-90 font-bold text-sm' }>
-                            <a href='#donate'>DONATE</a>
+                            <span>DONATE</span>
                         </Button>
                     </Link>
                     <div className={ 'flex gap-4 mt-auto px-12' }>
