@@ -4,7 +4,15 @@ import { createClient } from '@/utils/supabase/server';
 import { CONTACT_SCHEMA } from '@/utils/zod/contact-schema';
 import { parseWithZod } from '@conform-to/zod';
 
-export const submitHeroForm = async (previouseState: any, formData: FormData) => {
+/**
+ * Handles submitting the Hero form data to the 'contacts' table. Data is validated
+ * before being inserted into the table. If validation fails, an error message is returned.
+ * 
+ * @param previouseState 
+ * @param formData 
+ * @returns 
+ */
+export const submitHeroForm = async (previouseState: any, formData: FormData): Promise<any> => {
 
     const SUPABASE = createClient();
 
@@ -18,8 +26,6 @@ export const submitHeroForm = async (previouseState: any, formData: FormData) =>
 
     // Insert the form data into the 'contacts' table.
     const { data, error } = await SUPABASE.from('contacts').insert( { email, phone, zip } ).select().single();
-
-    console.log(data, error);
 
     return { success: true };
 };

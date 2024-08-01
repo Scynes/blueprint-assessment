@@ -15,7 +15,7 @@ import { CONTACT_SCHEMA } from '@/utils/zod/contact-schema';
  */
 export const HeroForm = () => {
 
-    const [ state, action ] = useFormState(submitHeroForm, undefined);
+    const [ state, action ] = useFormState(submitHeroForm, null);
 
     const [ form, fields ] = useForm({
     
@@ -31,12 +31,12 @@ export const HeroForm = () => {
     return (
         <div className={ 'max-w-[24rem] w-full text-black' }>
             <motion.form variants={ INPUT_TRANSITION_CONTAINER } initial={ 'hidden' } animate={ 'show' } id={ form.id } onSubmit={ form.onSubmit } action={ action } className={ 'flex flex-col gap-4' }>
-                <motion.input variants={ INPUT_TRANSITION } type={ 'email' } name={ fields.email.name } key={ fields.email.key } defaultValue={ fields.email.initialValue } className={ `flex-1 p-2 bg-blue-500 border-2 ${ fields.email.errors && 'border-red-700 text-red-700' } placeholder-white` } placeholder={ 'Email' } disabled={ false } />
+                <motion.input variants={ INPUT_TRANSITION } type={ 'email' } name={ fields.email.name } key={ fields.email.key } defaultValue={ fields.email.initialValue } className={ `flex-1 p-2 bg-blue-500 border-2 ${ fields.email.errors && 'border-red-700 text-red-700' } placeholder-white` } placeholder={ 'Email' } disabled={ state?.success } />
                 <div className={ 'flex gap-4 w-full' }>
-                    <motion.input variants={ INPUT_TRANSITION } type={ 'text' } name={ fields.phone.name } key={ fields.phone.key } defaultValue={ fields.phone.initialValue } className={ `w-full p-2 bg-blue-500 border-2 ${ fields.phone.errors && 'border-red-700 text-red-700' } placeholder-white` } placeholder={ 'Phone' } disabled={ false } />
-                    <motion.input variants={ INPUT_TRANSITION } type={ 'text' } name={ fields.zip.name } key={ fields.zip.key } defaultValue={ fields.phone.initialValue } className={ `w-full p-2 bg-blue-500 border-2 ${ fields.zip.errors && 'border-red-700 text-red-700' } placeholder-white` } placeholder={ 'Zip' } disabled={ false } />
+                    <motion.input variants={ INPUT_TRANSITION } type={ 'text' } name={ fields.phone.name } key={ fields.phone.key } defaultValue={ fields.phone.initialValue } className={ `w-full p-2 bg-blue-500 border-2 ${ fields.phone.errors && 'border-red-700 text-red-700' } placeholder-white` } placeholder={ 'Phone' } disabled={ state?.success } />
+                    <motion.input variants={ INPUT_TRANSITION } type={ 'text' } name={ fields.zip.name } key={ fields.zip.key } defaultValue={ fields.phone.initialValue } className={ `w-full p-2 bg-blue-500 border-2 ${ fields.zip.errors && 'border-red-700 text-red-700' } placeholder-white` } placeholder={ 'Zip' } disabled={ state?.success } />
                 </div>
-                <HeroFormSubmitButton isDisabled={ false }/>
+                <HeroFormSubmitButton isDisabled={ state?.success }/>
             </motion.form>
         </div>
     );
