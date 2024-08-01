@@ -13,13 +13,13 @@ import { INPUT_TRANSITION } from '@/animations/form-animations';
  * The hook is useful for detecting the pending state of a form submission and conditionlly rendering
  * certain things (such as the spinner) for status feedback.
  */
-export const HeroFormSubmitButton = () => {
+export const HeroFormSubmitButton = ( { isDisabled }: { isDisabled: boolean } ) => {
 
     const { pending } = useFormStatus();
 
     return (
-        <motion.button variants={ INPUT_TRANSITION } type={ 'submit' } className={ `transition-all flex justify-center text-black items-center bg-blue-400 ${ !pending && 'hover:bg-blue-300' } p-2 h-10 rounded-full` } disabled={ pending }>
-            { pending ? <Spinner /> : <span className={ 'font-medium' }>SIGN UP</span> }
+        <motion.button variants={ INPUT_TRANSITION } type={ 'submit' } className={ `transition-all flex justify-center text-black items-center ${ pending || isDisabled ? 'bg-slate-300' : 'bg-blue-400' } ${ !pending && !isDisabled && 'hover:bg-blue-300' } p-2 h-10 rounded-full` } disabled={ pending || isDisabled }>
+            { pending ? <Spinner /> : <span className={ 'font-medium' }>{ isDisabled ? 'THANK YOU' : 'SIGN UP' }</span> }
         </motion.button>
     );
 }
