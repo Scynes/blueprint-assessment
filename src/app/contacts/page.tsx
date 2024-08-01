@@ -1,11 +1,17 @@
 import { getContacts } from '@/actions/get-contacts';
+import Link from 'next/link';
 
 export default async function Contacts () {
 
     const { data, error } = await getContacts();
 
     return (
-        <div className={ 'flex h-full justify-center p-4' }>
+        <div className={ 'flex flex-col h-full justify-center p-4' }>
+            <Link href={ '/' } className={ 'self-start place-self-center mb-2' }>
+                <button className={ 'transition-all px-5 py-2 bg-gray-800 border-2 border-gray-500 hover:bg-gray-600' }>
+                    <span className={ 'text-lg text-white font-bold' }>Return Home</span>
+                </button>
+            </Link>
             <div className={ 'relative overflow-x-auto w-full' }>
                 <table className={ 'w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400' }>
                     <thead className={ 'text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400' }>
