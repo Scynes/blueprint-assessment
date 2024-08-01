@@ -8,7 +8,7 @@ import { submitHeroForm } from '@/actions/submit-hero-form';
 export const HeroForm = () => {
 
     return (
-        <div className={ 'max-w-80 w-full text-black' }>
+        <div className={ 'max-w-[24rem] w-full text-black' }>
             <form action={ submitHeroForm } className={ 'flex flex-col gap-4' }>
                 <input type={ 'email' } name={ 'email' } className={ 'flex-1 p-2 bg-blue-500 border-2 placeholder-white' } placeholder={ 'Email' } />
                 <div className={ 'flex gap-4 w-full' }>
