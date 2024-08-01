@@ -57,7 +57,7 @@ Create a `.env.local` file in the root directory and add the following environme
 ```plaintext
 NEXT_PUBLIC_SUPABASE_URL=your-supabase-url
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your-supabase-anon-key
-DATABASE_URL=your-postgresql-url
+NEXT_PRIVATE_SUPABASE_SERVICE_KEY=your-supabase-service-key
 ```
 
 ### Running the Project
@@ -110,7 +110,3 @@ Contributions are welcome! Please fork the repository and use a feature branch. 
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
-
----
-
-Feel free to customize it further according to your project's specifics!
