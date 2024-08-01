@@ -7,7 +7,7 @@ interface Properties {
 
 export const Button = ( { children, className }: Properties ) => {
     return (
-        <button className={ `select-none transition-all px-6 py-2 h-8 flex justify-center items-center ${ className }` }>
+        <button className={ `select-none transition-all px-6 py-2 flex justify-center items-center ${ className }` }>
             { children }
         </button>
     );
