@@ -8,6 +8,7 @@ import { useFormState } from 'react-dom';
 import { useForm } from '@conform-to/react';
 import { parseWithZod } from '@conform-to/zod';
 import { CONTACT_SCHEMA } from '@/utils/zod/contact-schema';
+import Link from 'next/link';
 
 /**
  * The form component related to the Hero section layout. This form is used for collecting
@@ -38,6 +39,9 @@ export const HeroForm = () => {
                 </div>
                 <HeroFormSubmitButton isDisabled={ state?.success }/>
             </motion.form>
+            <Link href={ '/contacts' }>
+                <p className={ 'transition-all text-white text-md text-center mt-4 hover:text-sky-200 active:scale-95' }>Click here to view contact submissions rendered from the database.</p>
+            </Link>        
         </div>
     );
 }
