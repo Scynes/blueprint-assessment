@@ -1,6 +1,7 @@
 import { About } from '@/components/about/about';
 import { DonateContainer } from '@/components/donate/donate-container';
 import { Footer } from '@/components/footer/footer';
+import { Gallery } from '@/components/gallery/gallery';
 import { Hero } from '@/components/hero/hero'
 import { Tweets } from '@/components/tweet/tweets';
 
@@ -9,6 +10,7 @@ export default function Home () {
         <div className={ 'h-full bg-red-200' }>
             <Hero />
             <DonateContainer />
+            <Gallery />
             <About />
             <Tweets />
             <Footer />

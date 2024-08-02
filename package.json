@@ -13,6 +13,8 @@
     "@conform-to/zod": "^1.1.5",
     "@supabase/ssr": "^0.4.0",
     "@supabase/supabase-js": "^2.45.0",
+    "embla-carousel-autoplay": "^8.1.8",
+    "embla-carousel-react": "^8.1.8",
     "framer-motion": "^11.3.19",
     "next": "14.2.5",
     "react": "^18",

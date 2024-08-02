@@ -22,3 +22,17 @@ html, * {
     top: -5px;
     left: -10px;
 }
+
+.embla-viewport {
+    overflow: hidden;
+}
+
+.embla-container {
+    display: flex;
+}
+
+.embla-slide {
+    display: flex;
+    flex: 0 0 100%;
+    min-width: 0;
+}
