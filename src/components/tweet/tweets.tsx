@@ -20,7 +20,7 @@ export const Tweets = () => {
 
     return (
         <div className={ 'p-4 sm:p-12 text-2xl sm:text-3xl font-extrabold text-white' }>
-            <div className={ 'p-4 bg-sky-800' }>
+            <div className={ 'p-4 bg-gradient-to-r from-sky-900 to-sky-500' }>
                 <h1>{ `WHAT'S BEING SAID?` }</h1>
             </div>
             <div className={ 'flex gap-6 overflow-x-scroll' }>
