@@ -24,9 +24,11 @@ export const NavigationSideBar = () => {
                     <Image src="/images/logo.png" alt="Logo" width={ 100 } height={ 80 } />
                 </div>
                 <div className={ 'h-full px-8 pt-8 pb-8 flex flex-col gap-4 items-center' }>
-                    <Button className={ 'bg-yellow-400 w-full h-10 text-black rounded-full hover:bg-yellow-300 font active:scale-90 font-bold text-sm' }>
-                        <span>VOLUNTEER</span>
-                    </Button>
+                    <Link href={'/#about'} className={ 'w-full' }>
+                        <Button className={ 'bg-yellow-400 w-full h-10 text-black rounded-full hover:bg-yellow-300 font active:scale-90 font-bold text-sm' }>
+                            <span>VOLUNTEER</span>
+                        </Button>
+                    </Link>
                     <Link href={'/#donate'} className={ 'w-full' }>
                         <Button className={ 'bg-red-600 w-full h-10 text-white rounded-full hover:bg-red-500 active:scale-90 font-bold text-sm' }>
                             <span>DONATE</span>
