@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Oswald } from "next/font/google";
 import { NavigationBar } from '@/components/navigation/navigation-bar';
 
 import "@/globals.css";
 import { Analytics } from '@vercel/analytics/next';
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Oswald({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Samantha Hall",

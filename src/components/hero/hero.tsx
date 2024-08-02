@@ -19,8 +19,8 @@ export const Hero = () => {
                 <motion.div variants={ HERO_ANIMATION_CONTAINER } initial={ 'hidden' } animate={ 'show' } className={ 'p-12 sm:p-0' }>
                     <Image src="/images/logo.png" alt="Logo" width={ 225 } height={ 225 } className={ 'mb-7' }/>
                     <div className={ 'mb-4' }>
-                        <motion.p variants={ HERO_TEXT_ANIMATION } className={ 'text-4xl font-extrabold' }>STAY IN TOUCH</motion.p>
-                        <motion.p variants={ HERO_TEXT_ANIMATION } className={ 'text-4xl font-extrabold' }>WITH SAMANTHA</motion.p>
+                        <motion.p variants={ HERO_TEXT_ANIMATION } className={ 'text-4xl sm:text-5xl font-extrabold' }>STAY IN TOUCH</motion.p>
+                        <motion.p variants={ HERO_TEXT_ANIMATION } className={ 'text-4xl sm:text-5xl font-extrabold' }>WITH SAMANTHA</motion.p>
                     </div>
                     <HeroForm />
                 </motion.div>
