@@ -27,7 +27,7 @@ export const NavigationSideBar = () => {
                     <Button className={ 'bg-yellow-400 w-full h-10 text-black rounded-full hover:bg-yellow-300 font active:scale-90 font-bold text-sm' }>
                         <span>VOLUNTEER</span>
                     </Button>
-                    <Link href={'#donate'} className={ 'w-full' }>
+                    <Link href={'/#donate'} className={ 'w-full' }>
                         <Button className={ 'bg-red-600 w-full h-10 text-white rounded-full hover:bg-red-500 active:scale-90 font-bold text-sm' }>
                             <span>DONATE</span>
                         </Button>

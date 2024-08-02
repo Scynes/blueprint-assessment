@@ -8,7 +8,7 @@ export const NavigationBarCTAGroup = () => {
             <Button className={ 'bg-yellow-400 text-black rounded-full h-8 hover:bg-yellow-300 font active:scale-90 font-bold text-sm' }>
                 <span>VOLUNTEER</span>
             </Button>
-            <Link href={ '#donate' }>
+            <Link href={ '/#donate' }>
                 <Button className={ 'bg-red-600 text-white rounded-full h-8 hover:bg-red-500 active:scale-90 font-bold text-sm' }>
                     <span>DONATE</span>
                 </Button>
