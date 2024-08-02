@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { NavigationBar } from '@/components/navigation/navigation-bar';
 
 import "@/globals.css";
+import { Analytics } from '@vercel/analytics/next';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
     return (
         <html lang="en">
+            <Analytics />
             <body className={inter.className}>
                 <div className={ 'grid grid-rows-[auto_1fr] h-dvh' }>
                     <header>
