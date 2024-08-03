@@ -20,8 +20,8 @@ export const Gallery = () => {
     ]
 
     return (
-        <section id={ 'gallery' } className={ 'px-4 sm:px-12 pb-10 sm:pb-16' }>
-            <div ref={ emblaRef } className={ 'embla-viewport h-72 md:h-96 border' }>
+        <section id={ 'gallery' } className={ 'mx-auto max-w-screen-2xl px-4 sm:px-12 pb-10 sm:pb-16' }>
+            <div ref={ emblaRef } className={ 'embla-viewport h-72 md:h-[30rem] border' }>
                 <div className={ 'h-full embla-container' }>
                     { IMAGES.map( ( image, index ) => (
                         <GalleryImage key={ index } src={ `/images/${ image }` } alt={ `Gallery image ${ index }` } />

@@ -19,7 +19,7 @@ export const Tweets = () => {
     ];
 
     return (
-        <div className={ 'p-4 sm:p-12 text-3xl sm:text-4xl font-extrabold text-white' }>
+        <section className={ 'mx-auto max-w-screen-2xl p-4 sm:p-12 text-3xl sm:text-4xl font-extrabold text-white' }>
             <div className={ 'p-4 bg-gradient-to-r from-sky-900 to-sky-500' }>
                 <h1>{ `WHAT'S BEING SAID?` }</h1>
             </div>
@@ -30,6 +30,6 @@ export const Tweets = () => {
                     </div>
                 )) }
             </div>
-        </div>
+        </section>
     );
 }

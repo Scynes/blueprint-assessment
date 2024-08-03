@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export const About = () => {
     return (
-        <section id={ 'about' } className={ 'transition-all px-4 pb-4 sm:px-12' }>
+        <section id={ 'about' } className={ 'mx-auto max-w-screen-2xl transition-all px-4 pb-4 sm:px-12' }>
             <div className={ 'p-4 mb-6 bg-gradient-to-l from-sky-900 to-sky-500' }>
                 <h1 className={ 'text-right text-3xl sm:text-4xl font-extrabold text-white' }>{ `ABOUT SAMANTHA.` }</h1>
             </div>
